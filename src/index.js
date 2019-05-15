@@ -1,4 +1,4 @@
-const dotenv = require('dotenv').config()
+require('dotenv').config()
 const { EventEmitter } = require('events')
 const mediator = new EventEmitter()
 const config = require('./config')
