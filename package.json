@@ -1,0 +1,32 @@
+{
+  "name": "udemy-deals-api",
+  "version": "1.0.0",
+  "description": "Udemy Deals API",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "serve": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wteja/udemy-deals-api.git"
+  },
+  "author": "Weerayut Teja",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wteja/udemy-deals-api/issues"
+  },
+  "homepage": "https://github.com/wteja/udemy-deals-api#readme",
+  "dependencies": {
+    "apollo-server-express": "^2.5.0",
+    "body-parse": "^0.1.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "graphql": "^14.3.0",
+    "graphql-type-json": "^0.3.0",
+    "helmet": "^3.18.0",
+    "lodash": "^4.17.11",
+    "mongodb": "^3.2.4",
+    "morgan": "^1.9.1"
+  }
+}

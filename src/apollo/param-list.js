@@ -1,0 +1,1 @@
+module.exports = `page: Int, limit: Int, search: String, sort: JSON`;
