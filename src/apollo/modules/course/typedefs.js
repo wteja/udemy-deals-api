@@ -15,11 +15,21 @@ type CoursesList {
     final: Boolean
 }
 
-type Course  {
+type Course {
+    id: ID,
     title: String
     description: String
     thumbnailUrl: String
     url: String
-    successCount: Int
+    successVote: [Boolean]
+    successRate: Int
+}
+
+type CourseVoteResult {
+    successRate: Int
+}
+
+extend type Mutation {
+    voteCourseSuccess(id: ID!, success: Boolean!): CourseVoteResult
 }
 `

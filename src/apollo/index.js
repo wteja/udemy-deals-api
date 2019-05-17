@@ -13,9 +13,16 @@ const create = options => {
         type Query {
             _empty: String
         }
+
+        type Mutation {
+            _empty: String
+        }
         `];
     let resolvers = {
         Query: {
+            _empty: () => ""
+        },
+        Mutation: {
             _empty: () => ""
         },
         JSON: GraphQLJSON
